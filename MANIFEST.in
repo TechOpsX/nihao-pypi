@@ -1,4 +1,3 @@
 include *.rst
 include LICENSE
 recursive-include requirements *
-recursive-include ddd_nginx/template *
