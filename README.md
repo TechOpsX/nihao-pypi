@@ -1,13 +1,8 @@
----
-title: NIHAO PYPI
----
+## NIHAO PYPI
 
-[![Build
-Status](https://travis-ci.com/TechOpsX/nihao-pypi.svg?branch=master)](https://travis-ci.com/TechOpsX/nihao-pypi)
-[![Pypi
-Status](https://badge.fury.io/py/nihao-pypi.svg)](https://badge.fury.io/py/nihao-pypi)
-[![Coveralls
-Status](https://coveralls.io/repos/github/TechOpsX/nihao-pypi/badge.svg?branch=master)](https://coveralls.io/github/TechOpsX/nihao-pypi?branch=master)
+[![Build Status](https://travis-ci.com/TechOpsX/nihao-pypi.svg?branch=master)](https://travis-ci.com/TechOpsX/nihao-pypi)
+[![PyPI version](https://badge.fury.io/py/nihao-pypi.svg)](https://badge.fury.io/py/nihao-pypi)
+[![Coverage Status](https://coveralls.io/repos/github/TechOpsX/nihao-pypi/badge.svg?branch=master)](https://coveralls.io/github/TechOpsX/nihao-pypi?branch=master)
 
 Installation
 ============
@@ -23,7 +18,7 @@ From pypi:
 Workshop
 ========
 
-<script src="<https://gist.github.com/sunwei/8cb78d270ff1cd3414bbe3ae10fd4fad.js>"></script>
+<script src="https://gist.github.com/sunwei/8cb78d270ff1cd3414bbe3ae10fd4fad.js"></script>
 
 License
 =======
