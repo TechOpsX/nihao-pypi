@@ -1,0 +1,21 @@
+language: python
+sudo: false
+python:
+- '3.4'
+- '3.5'
+- '3.6'
+install:
+- pip install -r requirements/base.txt
+- pip install -r requirements/ci.txt
+script: tox --recreate
+after_success:
+- py.test --cov=nihao_pypi --cov-report=term-missing tests
+- coveralls -i
+deploy:
+  provider: pypi
+  user: sunzhongmou
+  password:
+    secure: a7zJwSf4bV4aCWTNIzryyB4eTemvJItrg1kMNzEcWZgYqEzHJR+pPH87FAxTUDPbKj7sKFv6VqniWm0d3X8rma8qcTJ0DBVNEIUSpDSWeVu7dVBNHmDElr0o+ULqaTHSagMWXpPvEXwJCzX/kKZsdk3QKTF3ETSlCaZEmdP8WaVdJGPAjxipFw1HpdmdWp2z2PZ7wElFmEo0TdyhFIFb6W9PAjcLmAqUufEIJgXJYc62HneXa6ZgFfPuBoD7duuF2mQEOk7atPk2K9VP+ui2t6H/ZFUhmJSLKlGzUowS/HX3Fp0wFBO1pT5mu0rVjZoOJ+dC+lAXG/gDJ9sNHNC39GpiYqjntJZRL7eJ1ClTtkRxAls1PQf/mACfdY3W0RubqhMQS6xvj0Cwda/TGxBvBoHXlpnsh7cTlC7S6S62Z6MzSHueg5pqs3JUfrDZQaK9WoTr2RWjkcH8R1M9wUVjgyhh1jYfjmRSRMSVTeQniGCg11NgiNgns7v0ccf9iATWVM6H+VNrxGvL8mP9RoZuUNxjJpq1kBuZz4FSEUA0kg7Or+8CobqTZ1RvpKwEmCmEadGCKVpk4pboxgAwbN2s+bFnRlVECrO/ZWdSmkK8qHNFvE/kkqycExrnaO/PKRqsS+AMmPLO4W6FYZkQVtY69D6bRAclOULjbqU4C2/kskQ=
+  on:
+    python: 3.6
+  skip_existing: true
